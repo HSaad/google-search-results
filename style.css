@@ -1,0 +1,125 @@
+.container{
+	width: auto;
+	height: auto; 
+	min-width: 1000px;
+	min-height: 1000px;
+	position: relative;
+	display: grid;
+	grid-area:  "header"
+				"nav"
+				"results"
+				"footer";
+	grid-template-rows: 1fr 57px 15fr 1fr;
+}
+
+/*Google Header- logo, search bar, etc*/
+.header{
+	background-color: #f8f8f8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+.header a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+/*Search Bar */
+.header form{
+	display: inline-block;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 18px;
+}
+
+input[type=text]{
+	height: 40px;
+	width: 570px;
+	padding-left:15px;
+	border-radius: 0;
+	border: 1px solid #e5e7e9;
+}
+
+.search{
+	width: 587px;
+
+	-webkit-box-shadow:0px 2px 3px #ccd1d1;
+ 	-moz-box-shadow:0px 2px 3px #ccd1d1;
+	box-shadow: 0px 2px 3px #ccd1d1;
+
+}
+
+/*Google logo*/
+.header a.logo{
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+/*Sign in & Google Apps buttons*/
+.align{
+	display: inline-block;
+	position: absolute;
+	margin-left: 79%;
+	margin-top: 27px;
+	text-align: right;
+}
+
+.align a.signin{
+	display: inline-block;
+	position: relative;
+	margin-left: 20px;
+	background-color: #4c7bf0;
+	color: white;
+	padding: 8px 15px 8px 15px;
+	font-weight: bold;
+	border-radius: 2px;
+}
+
+/*TODO
+Align Google Apps button with sign in button
+Add magnifying glass icon to search bar
+Add text to search bar (build this webpage)
+*/
+
+/*Navigation bar */
+.nav{
+	background-color: #f8f8f8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	border-bottom: 1px solid #ededed;
+}
+
+.nav a{
+	display: inline-block;
+	text-decoration: none;
+	color: #737373;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+.nav a.all{
+	margin-left: 13%;
+	margin-right: 15px;
+	padding: 0 13px 15px 13px;
+	font-weight: bold;
+	color: #4c7bf0;
+	border-bottom: 3px solid #4c7bf0;
+}
+
+.nav a.settings{
+	margin-left: 80px;
+}
+
+
+/*
+.results{
+	background-color: gray;
+}
+
+.right{
+	background: yellow;
+}
+
+footer{
+	background-color: blue;
+}*/
